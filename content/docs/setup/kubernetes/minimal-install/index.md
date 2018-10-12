@@ -31,7 +31,7 @@ via `kubectl apply`, and wait a few seconds for the CRDs to be committed in the 
 
     {{< text bash >}}
     $ helm template install/kubernetes/helm/istio --name istio --namespace istio-system \
-      --set security.enabled=false \
+      --set security.enabled=true \
       --set ingress.enabled=false \
       --set gateways.istio-ingressgateway.enabled=false \
       --set gateways.istio-egressgateway.enabled=false \
